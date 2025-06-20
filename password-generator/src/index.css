@@ -1,0 +1,94 @@
+:root {
+  --color-primary: var(--neutral-7);
+  --colour-secondary: var(--neutral-1);
+}
+
+body {
+  margin: 0;
+  background-color: var(--neutral-2);
+}
+
+.app {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.top-content {
+  display: flex;
+  justify-content: center;
+}
+
+.top-content h3 {
+  padding: var(--space-m) var(--space-xl) var(--space-m) var(--space-xl);
+  background-color: var(--color-primary);
+  border-radius: var(--size-s);
+  font-size: 24px;
+  color: white;
+}
+
+.middle-content {
+  margin: 0px 0px var(--space-l) 0px;
+  padding: 0px 0px var(--space-xl) 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.options-tray {
+  padding: var(--space-xl) 0px var(--space-xl) 0px;
+}
+
+.results-tray {
+  padding: var(--space-xxl) 0px var(--space-xxl) 0px;
+  background-color: var(--neutral-4);
+  min-width: 50%;
+  border-radius: var(--size-s);
+  font-size: var(--space-xl);
+}
+
+.results-tray .buttons-container {
+  position: relative;
+  margin-right: 0px;
+}
+
+.results-tray button {
+  padding: var(--space-m);
+  fill: transparent;
+  background-color: inherit;
+  margin: var(--space-xs);
+  border: 0px;
+}
+
+.results-tray .result-display {
+  margin-right: var(--space-m);
+}
+
+.results-tray button:hover {
+  padding: var(--space-m);
+  fill: transparent;
+  background-color: var(--neutral-2);
+  margin: var(--space-xs);
+  border: 0px;
+}
+
+.options-tray {
+  background-color: var(--neutral-4);
+  border-radius: var(--size-s);
+  width: 50%;
+  margin-top: var(--space-l);
+  display: flex;
+  justify-content: center;
+}
+
+.options-tray > div {
+  margin: var(--space-s);
+}
+
+.options-tray .password-length-container label {
+  margin-right: var(--space-s);
+}
+
+.options-tray .password-length-container input {
+  max-width: var(--space-xxl);
+}

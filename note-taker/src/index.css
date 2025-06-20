@@ -1,0 +1,104 @@
+:root {
+  /* App Defaults*/
+  font-size: var(--font-size-m);
+  --font-size-s: var(--size-s);
+  --font-size-m: var(--size-m);
+  --font-size-l: var(--size-l);
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--neutral-3);
+}
+
+.App {
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+}
+
+.content {
+}
+
+.footer {
+}
+
+.note {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: var(--space-s);
+  margin: var(--space-s);
+  min-width: 20vw;
+}
+
+.note__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-l);
+  width: 100%;
+}
+
+.note__title .title-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.note__title button {
+  border: 0px;
+  background-color: inherit;
+  padding: var(--space-s);
+}
+
+.note__title .buttons-container {
+  display: flex;
+  gap: 8px;
+}
+
+.note__title button:hover {
+  background-color: var(--neutral-5);
+}
+
+.note__body {
+}
+
+.note__footer {
+}
+
+.note__footer p {
+  font-style: italic;
+  text-decoration: underline;
+  font-size: var(--font-size-s);
+}
+
+li::marker {
+  display: none;
+  font-size: 0;
+}
+
+ul {
+  float: left;
+}
+
+ul li {
+  display: inline-block;
+  margin-top: var(--space-xs);
+}
